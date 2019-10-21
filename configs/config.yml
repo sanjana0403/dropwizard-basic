@@ -1,0 +1,15 @@
+name: helloworld
+loggingEnabled: true
+
+database:
+  driverClass: org.mariadb.jdbc.Driver
+  user: root
+  password: root
+  properties:
+    charSet: UTF-8
+    hibernate.dialect: org.hibernate.dialect.MariaDBDialect
+    org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: FATAL
+    hibernate.hbm2ddl.auto: update
+    hibernate.show_sql: true
+    hibernate:format_sql: true
+  url: jdbc:mysql://localhost:3306/helloworld?createDatabaseIfNotExist=true
